@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title> The GOAT</title>
+</head>
+<body>
+<header>
+    <h1>THE ULTIMATE GOAT</h1>
+</header>
+<section class="welcome">
+    <img src="img/shehry.png" alt="picture of ronaldo">
+    <div class="welcome">
+        <h2>Welcome to<br></br> goat's webpage</h2>
+    </div>
+</section>
+<nav class="main-nav">
+    <ul>
+        <li><a href="Join">Join us</a></li>
+        <li><a href="about">about us</a></li>
+        <li><a href="contact">contact us</a></li>
+    </ul>
+</nav>
+<main>
+    <article>
+        <h2>THIS IS ULTIMATE GOAT DEBATE</h2>
+        <p class="success">Lionel Messi and Cristiano Ronaldo are two of the greatest soccer players in
+            history, defining a nearly two-decade era of global dominance. Messi, the
+            Inter Miami and Argentina star, is celebrated as a natural genius, renowned
+            for his magical dribbling, extraordinary vision, and pinpoint passing
+             He relies on technical artistry, a low center of gravity, and high soccer
+            IQ to unlock defenses and create scoring opportunities.
+            Conversely, Ronaldo, currently with Al-Nassr and Portugal, is the ultimate
+            goalscoring machine, admired for his relentless athleticism, speed,
+         aerial dominance. He is a physical powerhouse, highly proficient
+                  with both feet and exceptionally clinical in the penalty area.
+                   Statistically, both players have scored over 900 official career goals,
+                    though Messi holds the advantage in playmaking and total career assists.
+                     Messi has claimed a record eight Ballon d'Or awards and the 2022
+                      FIFA World Cup with Argentina. Ronaldo has won five Ballon d'Ors,
+                       five UEFA Champions League titles, and the UEFA Euro 2016 championship
+                        with Portugal. Ultimately, comparing them comes down to a matter
+                         of personal preference between Messi's creative genius and Ronaldo's
+                          physical perfection</p>
+    </article>
+    <ul>
+        <img src="img/pakistan.png" alt="picture of goat">
+        <img src="img/portugal.png" alt="image of ronaldo">
+        <img src="img/prince.png" alt="king">
+    </ul>
+</main>
+<section class="join">
+    <ul>
+        <h2>JOIN TODAY!</h2>
+    </ul>
+    <form>
+        <input type="email" class="email" placeholder="enter email and hit enter">
+    </form>
+</section>
+<footer>
+    <p class="Copyright">Copyright 2008</p>
+</footer>
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
